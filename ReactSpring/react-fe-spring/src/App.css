@@ -1,0 +1,44 @@
+.title-a{
+    width: "min-content" !important;
+    margin-top: "-2em" !important;
+    margin-bottom: "1em" !important;
+    background-color: "white" !important;
+    white-space: "nowrap" !important;
+}
+
+.title-b{
+    border: 1px dashed lightgray;
+    padding: 2em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination__link {
+    margin: 0 0.5em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pagination__link--active {
+    background-color: #ddd;
+    
+  }
+  
+  .pagination__link--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
