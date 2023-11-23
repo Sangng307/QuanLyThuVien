@@ -32,7 +32,7 @@ public class CartService {
 
         // Check if adding the book will exceed the limit
         Integer totalQuantityInCart = cartRepository.getTotalQuantityInCartByUserId(userId);
-        if (totalQuantityInCart > 3) {
+        if (totalQuantityInCart > 2) {
             // You can throw an exception or handle the case where the limit is exceeded
             throw new RuntimeException("You can't add more than 3 books to the cart.");
         }

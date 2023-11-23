@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useUser } from "../../component/UserProvider";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const user = useUser();
 
-  function sendLoginRequest() {
+  function sendLoginRequest(event) {
+    event.preventDefault();
+
     const reqBody = {
       username: username,
       password: password,
@@ -28,25 +31,27 @@ const Login = () => {
       })
       .then(([body, headers]) => {
         user.setJwt(headers["authorization"]);
-        window.location.href = "/";
-        // console.log(body);
+        setTimeout(redirectToHome, 0); // Redirect to the home page after 2 seconds
       })
-      .catch((error) => {
-        alert(error.message || "An error occurred during login");
-      });
+      .catch((error) => {});
   }
+
+  function redirectToHome() {
+    window.location.href = "/"; // Redirect to the home page
+  }
+
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">
         <Col xs={6}>
           <div className="p-4 border rounded shadow-sm">
-            <form>
+            <form onSubmit={sendLoginRequest}>
               <div className="mb-3">
                 <label htmlFor="username" className="form-label">
                   Username
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   className="form-control"
                   id="username"
                   value={username}
@@ -66,18 +71,13 @@ const Login = () => {
                 />
               </div>
               <div className="d-flex justify-content-end gap-3">
-                <Button
-                  id="submit"
-                  variant="primary"
-                  onClick={() => sendLoginRequest()}
-                >
+                <Button variant="primary" type="submit">
                   Login
                 </Button>
                 <Button
-                  id="submit"
                   variant="secondary"
                   onClick={() => {
-                    window.location.href = "/";
+                    redirectToHome(); // Redirect to the home page
                   }}
                 >
                   Back

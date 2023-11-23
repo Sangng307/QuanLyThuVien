@@ -3,6 +3,7 @@ import axios from "axios";
 import { Table, Button, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Rent = () => {
   const [distinctRents, setDistinctRents] = useState([]);
@@ -21,7 +22,7 @@ const Rent = () => {
   return (
     <div>
       <Container>
-        <h1>Rent Lish</h1>
+        <h1>Rent List</h1>
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -40,10 +41,14 @@ const Rent = () => {
                 <td>{rent.user.email}</td>
                 <td>
                   <Button variant="info">
-                    <FontAwesomeIcon icon={faInfoCircle} />
+                    <Link
+                      to={`/rentdetail/${rent.user.id}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <FontAwesomeIcon icon={faInfoCircle} />
+                    </Link>
                   </Button>
                 </td>
-                {/* Display other data in respective columns */}
               </tr>
             ))}
           </tbody>

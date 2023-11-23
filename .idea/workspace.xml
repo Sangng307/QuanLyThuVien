@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d6041b-a74f-4605-b9ab-28afda75defb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/entity/AuthorityEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/AssignmentView/AssignmentView.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/AssignmentView/AssignmentView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/privateRoute/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/react-fe-spring/src/page/privateRoute/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/controller/AssignmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/controller/AssignmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/entity/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/entity/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/repository/AssignmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/repository/AssignmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/service/AssignmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/service/AssignmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReactSpring/src/main/java/com/ReactSpring/service/CartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +28,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/FullProject clone",
+    "git-widget-placeholder": "new21",
+    "last_opened_file_path": "D:/FullProject",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -64,6 +45,7 @@
       <workItem from="1698853082936" duration="8000" />
       <workItem from="1698853093451" duration="3000" />
       <workItem from="1699538015606" duration="14000" />
+      <workItem from="1700568841733" duration="13000" />
     </task>
     <servers />
   </component>

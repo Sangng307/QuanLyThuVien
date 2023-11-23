@@ -63,7 +63,7 @@ public class AdminBookController {
             if (imageFile != null && !imageFile.isEmpty()) {
                 // Save the image file and store the original file name
                 String originalFileName = imageFile.getOriginalFilename();
-                String imagePath = "D:\\FullProjectclone\\ReactSpring\\react-fe-spring\\public\\" + originalFileName;
+                String imagePath = "D:\\FullProject\\ReactSpring\\react-fe-spring\\public\\" + originalFileName;
                 // Save the image file to the specified directory
                 imageFile.transferTo(new File(imagePath));
                 newBook.setImage(originalFileName);
@@ -110,7 +110,7 @@ public class AdminBookController {
             if (imageFile != null && !imageFile.isEmpty()) {
                 // Save the image file and store the original file name
                 String originalFileName = imageFile.getOriginalFilename();
-                String imagePath = "D:\\FullProjectclone\\ReactSpring\\react-fe-spring\\public\\" + originalFileName;
+                String imagePath = "D:\\FullProject\\ReactSpring\\react-fe-spring\\public\\" + originalFileName;
                 // Save the image file to the specified directory
                 imageFile.transferTo(new File(imagePath));
                 book.setImage(originalFileName);

@@ -31,7 +31,7 @@ public class RentService {
                 Rent rent = new Rent();
                 rent.setUser(user);
                 rent.setBook(book);
-                rent.setStatus(StatusRentEnum.PENDING); // Set the status as needed
+                rent.setStatus(StatusRentEnum.PENDING.name()); // Set the status as needed
                 rent.setStartDay(null);
                 rent.setEndDay(null);
                 rentRepository.save(rent);

@@ -1,14 +1,14 @@
-// Navbar.js
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useUser } from "../../component/UserProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import { Container, Navbar } from "react-bootstrap";
 
 const UserNavBar = ({ onCartCountUpdate }) => {
   const user = useUser();
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   const handlePay = async () => {
     try {
@@ -29,25 +29,6 @@ const UserNavBar = ({ onCartCountUpdate }) => {
       // Handle payment initiation error
     }
   };
-  // useEffect(() => {
-  //   const fetchItemCount = async () => {
-  //     try {
-  //       const response = await axios.get("/user/cart/count", {
-  //         headers: {
-  //           Authorization: `Bearer ${user.jwt}`,
-  //         },
-  //       });
-
-  //       if (response.status === 200) {
-  //         setCount(response.data);
-  //       }
-  //     } catch (error) {
-  //       console.error("Error fetching item count:", error);
-  //     }
-  //   };
-
-  //   fetchItemCount();
-  // }, [user.jwt, onCartCountUpdate]);
 
   const handleLogout = () => {
     user.setJwt(null);
@@ -55,30 +36,19 @@ const UserNavBar = ({ onCartCountUpdate }) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
+    <Navbar sticky="top" bg="light" expand="lg">
+      <Container>
         <Link className="navbar-brand" to="/">
           Your Brand
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
               </Link>
             </li>
-
             <li className="nav-item">
               <Link className="nav-link" to="/book">
                 Book
@@ -106,9 +76,9 @@ const UserNavBar = ({ onCartCountUpdate }) => {
               Pay
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

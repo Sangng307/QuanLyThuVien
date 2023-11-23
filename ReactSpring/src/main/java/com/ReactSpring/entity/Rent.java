@@ -25,5 +25,5 @@ public class Rent {
     private Book book;
     private Date startDay;
     private Date endDay;
-    private StatusRentEnum status;
+    private String status;
 }
